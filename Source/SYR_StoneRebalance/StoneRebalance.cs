@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -19,11 +19,11 @@ namespace SYR_StoneRebalance
         public StoneRebalanceCore(ModContentPack content) : base(content)
         {
             settings = GetSettings<StoneRebalanceSettings>();
-            var harmony = HarmonyInstance.Create("Syrchalis.Rimworld.StoneRebalance");
+            var harmony = new Harmony("Syrchalis.Rimworld.StoneRebalance");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
-        public override string SettingsCategory() => "StoneRebalanceSettingsCategory".Translate();
+        public override string SettingsCategory() => "SyrStoneRebalanceSettingsCategory".Translate();
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
@@ -33,7 +33,7 @@ namespace SYR_StoneRebalance
                 listing_Standard.Begin(inRect);
                 //listing_Standard.CheckboxLabeled("SyrThrumkin_useUnsupportedHair".Translate(), ref SyrNagaSettings.useUnsupportedHair, ("SyrThrumkin_useUnsupportedHairTooltip".Translate()));
                 //listing_Standard.Gap(24f);
-                if (listing_Standard.ButtonText("SyrThrumkin_defaultSettings".Translate(), "SyrThrumkin_defaultSettingsTooltip".Translate()))
+                if (listing_Standard.ButtonText("SyrStoneRebalance_defaultSettings".Translate(), "SyrStoneRebalance_defaultSettingsTooltip".Translate()))
                 {
                     //SyrNagaSettings.useUnsupportedHair = false;
                 }

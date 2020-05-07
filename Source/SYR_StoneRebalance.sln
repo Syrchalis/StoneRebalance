@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYR_StoneRebalance", "SYR_Additions\SYR_StoneRebalance.csproj", "{19275EDA-5329-4400-9850-42B0A4C5545C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SYR_StoneRebalance", "SYR_StoneRebalance\SYR_StoneRebalance.csproj", "{19275EDA-5329-4400-9850-42B0A4C5545C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {73C5C939-C4F5-4CD6-91AA-5AD5EDAAE916}
+		SolutionGuid = {8D503280-C996-407F-807A-6487216D9D12}
 	EndGlobalSection
 EndGlobal

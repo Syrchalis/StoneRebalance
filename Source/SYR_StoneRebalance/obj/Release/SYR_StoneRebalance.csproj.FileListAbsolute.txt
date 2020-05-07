@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_StoneRebalance\Source\SYR_StoneRebalance\obj\Release\SYR_StoneRebalance.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_StoneRebalance\Source\SYR_StoneRebalance\obj\Release\SYR_StoneRebalance.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_StoneRebalance\1.1\Assemblies\SYR_StoneRebalance.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_StoneRebalance\Source\SYR_StoneRebalance\obj\Release\SYR_StoneRebalance.dll
