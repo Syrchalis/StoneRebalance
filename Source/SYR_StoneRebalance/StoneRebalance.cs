@@ -12,7 +12,7 @@ using Verse.AI;
 
 namespace SYR_StoneRebalance
 {
-    public class StoneRebalanceCore : Mod
+    /*public class StoneRebalanceCore : Mod
     {
         public static StoneRebalanceSettings settings;
 
@@ -45,5 +45,5 @@ namespace SYR_StoneRebalance
         {
             base.WriteSettings();
         }
-    }
+    }*/
 }
