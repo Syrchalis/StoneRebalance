@@ -50,7 +50,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Sandstone"]/statBases/MaxHitPoints</xpath>
 		<value>
-      <MaxHitPoints>400</MaxHitPoints>
+			<MaxHitPoints>400</MaxHitPoints>
 		</value>
 	</Operation>
 
@@ -58,13 +58,13 @@
 		<xpath>*/ThingDef[defName = "BlocksSandstone"]/stuffProps/statFactors</xpath>
 		<value>
 			<statFactors>
-        <MaxHitPoints>1.2</MaxHitPoints>
+				<MaxHitPoints>1.2</MaxHitPoints>
 				<WorkToBuild>2.0</WorkToBuild>
 				<WorkToMake>1.0</WorkToMake>
-      </statFactors>
+			</statFactors>
 			<statOffsets>
-        <WorkToBuild>70</WorkToBuild>
-      </statOffsets>
+				<WorkToBuild>70</WorkToBuild>
+			</statOffsets>
 		</value>
 	</Operation>
 
@@ -98,7 +98,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Granite"]/statBases/MaxHitPoints</xpath>
 		<value>
-      <MaxHitPoints>720</MaxHitPoints>
+			<MaxHitPoints>720</MaxHitPoints>
 		</value>
 	</Operation>
 
@@ -106,10 +106,10 @@
 		<xpath>*/ThingDef[defName = "BlocksGranite"]/stuffProps/statFactors</xpath>
 		<value>
 			<statFactors>
-        <MaxHitPoints>1.8</MaxHitPoints>
+				<MaxHitPoints>1.8</MaxHitPoints>
 				<WorkToBuild>6.0</WorkToBuild>
 				<WorkToMake>1.5</WorkToMake>
-      </statFactors>
+			</statFactors>
 		</value>
 	</Operation>
 
@@ -136,7 +136,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Limestone"]/statBases/MaxHitPoints</xpath>
 		<value>
-      <MaxHitPoints>640</MaxHitPoints>
+			<MaxHitPoints>640</MaxHitPoints>
 		</value>
 	</Operation>
 
@@ -144,14 +144,14 @@
 		<xpath>*/ThingDef[defName = "BlocksLimestone"]/stuffProps/statFactors</xpath>
 		<value>
 			<statFactors>
-        <MaxHitPoints>1.6</MaxHitPoints>
+				<MaxHitPoints>1.6</MaxHitPoints>
 				<WorkToBuild>4.0</WorkToBuild>
 				<WorkToMake>1.25</WorkToMake>
-      </statFactors>
+			</statFactors>
 			<statOffsets>
-        <Beauty>1</Beauty>
+				<Beauty>1</Beauty>
 				<WorkToBuild>105</WorkToBuild>
-      </statOffsets>
+			</statOffsets>
 		</value>
 	</Operation>
 
@@ -185,7 +185,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Slate"]/statBases/MaxHitPoints</xpath>
 		<value>
-      <MaxHitPoints>480</MaxHitPoints>
+			<MaxHitPoints>480</MaxHitPoints>
 		</value>
 	</Operation>
 
@@ -193,14 +193,14 @@
 		<xpath>*/ThingDef[defName = "BlocksSlate"]/stuffProps/statFactors</xpath>
 		<value>
 			<statFactors>
-        <MaxHitPoints>1.3</MaxHitPoints>
+				<MaxHitPoints>1.3</MaxHitPoints>
 				<WorkToBuild>3.0</WorkToBuild>
 				<WorkToMake>1.2</WorkToMake>
-      </statFactors>
+			</statFactors>
 			<statOffsets>
-        <Beauty>4</Beauty>
+				<Beauty>4</Beauty>
 				<WorkToBuild>90</WorkToBuild>
-      </statOffsets>
+			</statOffsets>
 		</value>
 	</Operation>
 
@@ -222,16 +222,26 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-    <xpath>*/TerrainDef[defName = "FineTileSlate"]</xpath>
-    <match Class="PatchOperationAdd">
-			<xpath>*/TerrainDef[defName = "FineTileSlate"]</xpath>
-				<value>
-					<statBases>
+		<xpath>*/TerrainDef[defName = "FineTileSlate"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationConditional">
+			<xpath>*/TerrainDef[defName = "FineTileSlate"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>*/TerrainDef[defName = "FineTileSlate"]/statBases</xpath>
+					<value>
 						<Beauty>4</Beauty>
-					</statBases>
-				</value>
-    </match>
-  </Operation>
+					</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>*/TerrainDef[defName = "FineTileSlate"]</xpath>
+					<value>
+						<statBases>
+							<Beauty>4</Beauty>
+						</statBases>
+					</value>
+			</nomatch>
+		</match>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/TerrainDef[defName = "FlagstoneSlate"]</xpath>
@@ -247,7 +257,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>*/ThingDef[defName = "Marble"]/statBases/MaxHitPoints</xpath>
 		<value>
-      <MaxHitPoints>560</MaxHitPoints>
+			<MaxHitPoints>560</MaxHitPoints>
 		</value>
 	</Operation>
 
@@ -255,11 +265,11 @@
 		<xpath>*/ThingDef[defName = "BlocksMarble"]/stuffProps/statFactors</xpath>
 		<value>
 			<statFactors>
-        <MaxHitPoints>1.5</MaxHitPoints>
+				<MaxHitPoints>1.5</MaxHitPoints>
 				<WorkToBuild>5.0</WorkToBuild>
 				<WorkToMake>1.4</WorkToMake>
 				<Beauty>2</Beauty>
-      </statFactors>
+			</statFactors>
 		</value>
 	</Operation>
 
@@ -267,9 +277,9 @@
 		<xpath>*/ThingDef[defName = "BlocksMarble"]/stuffProps/statOffsets</xpath>
 		<value>
 			<statOffsets>
-        <Beauty>2</Beauty>
+				<Beauty>2</Beauty>
 				<WorkToBuild>120</WorkToBuild>
-      </statOffsets>
+			</statOffsets>
 		</value>
 	</Operation>
 
@@ -291,16 +301,26 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-    <xpath>*/TerrainDef[defName = "FineTileMarble"]</xpath>
-    <match Class="PatchOperationAdd">
-			<xpath>*/TerrainDef[defName = "FineTileMarble"]</xpath>
-				<value>
-					<statBases>
+		<xpath>*/TerrainDef[defName = "FineTileMarble"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationConditional">
+			<xpath>*/TerrainDef[defName = "FineTileMarble"]/statBases</xpath>
+			<match Class="PatchOperationAdd">
+				<xpath>*/TerrainDef[defName = "FineTileMarble"]/statBases</xpath>
+					<value>
 						<Beauty>4</Beauty>
-					</statBases>
-				</value>
-    </match>
-  </Operation>
+					</value>
+			</match>
+			<nomatch Class="PatchOperationAdd">
+				<xpath>*/TerrainDef[defName = "FineTileMarble"]</xpath>
+					<value>
+						<statBases>
+							<Beauty>4</Beauty>
+						</statBases>
+					</value>
+			</nomatch>
+		</match>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>*/TerrainDef[defName = "FlagstoneMarble"]</xpath>
