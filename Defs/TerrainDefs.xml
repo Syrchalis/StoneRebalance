@@ -19,6 +19,9 @@
     <researchPrerequisites>
       <li>Stonecutting</li>
     </researchPrerequisites>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </TerrainDef>
 
@@ -40,6 +43,9 @@
     <researchPrerequisites>
       <li>Stonecutting</li>
     </researchPrerequisites>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </TerrainDef>
 

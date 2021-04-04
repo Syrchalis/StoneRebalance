@@ -356,7 +356,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>*/TerrainDef[defName = "TileGranite" or defName = "FlagstoneGranite" or defName = "FineTileGranite"]/color</xpath>
+		<xpath>*/TerrainDef[defName[contains(text(), 'Granite')]]/color</xpath>
 		<value>
 			<color>(100,110,115)</color>
 		</value>
